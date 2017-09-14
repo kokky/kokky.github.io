@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+.sp_block {
+  display: none;
+}
+
+#con_main {
+  padding-top: 70px;
+  padding-bottom: 90px;
+  background: #f1f1f1;
+}
+
+.youtube_movie {
+  margin: 0 auto 100px;
+  width: 980px;
+  position: relative;
+  iframe {
+    background: #ddd;
+    margin: 0 auto;
+  }
+}
+
+section.chapter {
+  width: 980px;
+  margin: 0 auto 90px;
+  padding: 40px;
+  background: #fff;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #333;
+  font-size: 14px;
+}
+
+.scene {
+  width: 100%;
+  .inner {
+    margin: 0 auto 80px;
+    overflow: hidden;
+    width: 900px;
+    h5 {
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+    .thumbnail {
+      background: #ddd;
+      text-align: center;
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
+    .text {
+      //background: #fff;
+      box-sizing: border-box;
+      line-height: 1.8;
+      //padding: 20px;
+      width: 415px;
+      p + p {
+        margin-top: 10px;
+      }
+    }
+  }
+  &.txt_right {
+    .thumbnail {
+      float: left;
+    }
+    .text {
+      float: right;
+    }
+  }
+  &.txt_left {
+    .thumbnail {
+      float: right;
+    }
+    .text {
+      float: left;
+    }
+  }
+  &:after {
+    content: "";
+    clear: both;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .sp_block {
+    display: inherit;
+  }
+  #con_main {
+    padding-bottom: 30px;
+    .heading {
+      margin: 0 auto;
+      width: 90%;
+    }
+    h5.subtitle {
+      padding-bottom: 0;
+    }
+  }
+  .youtube_movie.for-pc {
+    display: none;
+  }
+  .youtube_movie {
+    margin: 0 auto 40px;
+    position: relative;
+    width: 90%;
+    text-align: center;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    iframe {
+      position: absolute;
+      width: 100% !important;
+      height: 100% !important;
+      top: 0;
+      left: 0;
+    }
+  }
+  
+  section.chapter {
+    width: 90%;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+  .scene {
+    margin-bottom: 50px;
+    .inner {
+      margin: 0 auto;
+      width: 100%;
+      .thumbnail {
+        margin-bottom: 20px;
+        width: 100%;
+      }
+      .text {
+        width: 100%;
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+  section.chapter:before {
+    content: url("../images/movie/chapter_deco_1.svg");
+    position: absolute;
+    width: 96px;
+    height: 75px;
+    top: -30px;
+    left: -30px;
+    z-index: 2;
+    -moz-transform: scale(0.7, 0.7);
+    -ms-transform: scale(0.7, 0.7);
+    -webkit-transform: scale(0.7, 0.7);
+    transform: scale(0.7, 0.7);
+  }
+  section.chapter:after {
+    content: url("../images/movie/chapter_deco_2.svg");
+    position: absolute;
+    width: 89px;
+    height: 57px;
+    bottom: -20px;
+    right: -20px;
+    z-index: 2;
+    -moz-transform: scale(0.8, 0.8);
+    -ms-transform: scale(0.8, 0.8);
+    -webkit-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #con_main {
+    .heading {
+      .caption {
+        h3 {
+          span.open-sans {
+            padding: 0 51px 0 53px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #con_main {
+    .heading {
+      .caption {
+        h3 {
+          span.open-sans {
+            padding: 0 28px 0 27px;
+          }
+        }
+      }
+    }
+    .scene {
+      h5.subtitle {
+        span {
+          padding: 0 4px 18px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .youtube_movie.for-sp {
+    display: none;
+  }
+  section.chapter:before {
+    content: url("../images/movie/chapter_deco_1.svg");
+    position: absolute;
+    width: 96px;
+    height: 75px;
+    top: -40px;
+    left: -30px;
+    z-index: 2;
+  }
+  section.chapter:after {
+    content: url("../images/movie/chapter_deco_2.svg");
+    position: absolute;
+    width: 89px;
+    height: 57px;
+    bottom: -20px;
+    right: -20px;
+    z-index: 2;
+  }
+}

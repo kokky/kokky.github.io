@@ -1,0 +1,15 @@
+<svg id="グループ_4" data-name="グループ 4" xmlns="http://www.w3.org/2000/svg" width="58.63" height="78.47" viewBox="0 0 58.63 78.47">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #f9db38;
+      }
+    </style>
+  </defs>
+  <path id="black" class="cls-1" d="M1031.04,2121.49l34.07,3.76-12.82-29.95Z" transform="translate(-1031.03 -2095.31)"/>
+  <path id="yellow" class="cls-2" d="M1039.3,2143.83l48.46,29.95,1.88-54.28Z" transform="translate(-1031.03 -2095.31)"/>
+</svg>

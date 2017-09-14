@@ -1,0 +1,15 @@
+<svg id="グループ_2" data-name="グループ 2" xmlns="http://www.w3.org/2000/svg" width="95.625" height="74.031" viewBox="0 0 95.625 74.031">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #534943;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="多角形_4" data-name="多角形 4" class="cls-1" d="M255.426,703.629l-74.045-19.84,54.205-54.205Z" transform="translate(-181.375 -629.594)"/>
+  <path id="多角形_6" data-name="多角形 6" class="cls-2" d="M277,658.572l-8.111,37.9L240.117,670.5Z" transform="translate(-181.375 -629.594)"/>
+</svg>
