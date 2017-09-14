@@ -1542,7 +1542,7 @@
     top: 100px;
   }
   #con_main.kunisaki section.message1 div {
-    height: 250px;
+    height: 243px;
     right: 0;
     left: 63%;
     width: 24%;
@@ -1552,8 +1552,8 @@
     content: '';
     position: absolute;
     width: 275%;
-    height: 90%;
-    top: 12%;
+    height: 100%;
+    top: 10%;
     left: -125%;
     z-index: 0;
     background: url("../images/member/kunisaki/msg1_triangle.svg") no-repeat;
